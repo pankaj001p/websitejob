@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ibps-rrb-14th",
+    "title": "IBPS RRB 14th Form",
+    "posts": "13217",
+    "date": "22 Sep 2025",
+    "new": true,
+    "details": "Online form for Officers & Office Assistants in Regional Rural Banks across India.",
+    "apply": "https://ibps.in",
+    "notification": "#"
+  },
+  {
+    "id": "ssc-cgl-2025",
+    "title": "SSC CGL 2025",
+    "posts": "7500",
+    "date": "21 Sep 2025",
+    "new": false,
+    "details": "Combined Graduate Level Examination for various Group-‘B’ and Group-‘C’ posts in ministries.",
+    "apply": "https://ssc.nic.in",
+    "notification": "#"
+  },
+  {
+    "id": "rrb-ntpc-2025",
+    "title": "RRB NTPC 2025",
+    "posts": "7500",
+    "date": "20 Sep 2025",
+    "new": true,
+    "details": "Non-Technical Popular Categories (Graduate & Under-graduate levels) in Indian Railways.",
+    "apply": "https://rrbapply.gov.in",
+    "notification": "#"
+  },
+  {
+    "id": "sbi-clerk-2025",
+    "title": "SBI Clerk 2025",
+    "posts": "3500",
+    "date": "19 Sep 2025",
+    "new": false,
+    "details": "Clerical cadre recruitment in State Bank of India – apply online for JA posts.",
+    "apply": "https://sbi.co.in",
+    "notification": "#"
+  }
+]

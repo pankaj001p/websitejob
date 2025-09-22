@@ -1,0 +1,229 @@
+/* ---------- Root Variables ---------- */
+:root {
+    --primary: #0057b8;
+    --accent: #ffd600;
+    --bg: #f5f7fa;
+    --text: #222;
+    --card-bg: #ffffff;
+    --radius: 8px;
+    --shadow: 0 2px 6px rgba(0, 0, 0, .12);
+}
+
+/* ---------- Global Reset ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+.main-header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 1.2rem;
+}
+.header-content h1 { font-size: 1.8rem; }
+.header-content p { font-size: 1rem; opacity: .9; }
+
+/* ---------- Navigation ---------- */
+.main-nav {
+    background: #fff;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem 1.2rem;
+}
+.nav-link {
+    margin: 0 .8rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+}
+#global-search {
+    border: 1px solid #ccc;
+    border-radius: var(--radius) 0 0 var(--radius);
+    padding: .4rem .6rem;
+    outline: none;
+}
+.search-box button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: .45rem .7rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary) 60%, var(--accent) 100%);
+    color: #fff;
+    padding: 3rem 1.2rem;
+    text-align: center;
+}
+.hero-content h2 { font-size: 2rem; margin-bottom: .5rem; }
+.live-badge {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: .3rem .8rem;
+    background: crimson;
+    border-radius: var(--radius);
+    font-weight: bold;
+}
+.job-preview {
+    margin-top: 1.2rem;
+    font-size: .95rem;
+    opacity: .92;
+}
+
+/* ---------- Social ---------- */
+.social-links { margin: 1rem 0; }
+.social-links a {
+    color: #fff;
+    margin: 0 .4rem;
+    text-decoration: underline;
+}
+.social-buttons { margin-top: 1.5rem; }
+.social-btn {
+    display: inline-block;
+    margin: .4rem;
+    padding: .6rem 1.2rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.telegram { background: #0088cc; }
+.youtube { background: #ff0000; }
+.twitter { background: #1da1f2; }
+
+/* ---------- Tools Grid ---------- */
+.tools-section {
+    padding: 2rem 1.2rem;
+    background: var(--card-bg);
+}
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+.tool-btn {
+    position: relative;
+    background: var(--primary);
+    color: #fff;
+    padding: 1.2rem 1rem;
+    border-radius: var(--radius);
+    text-align: center;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: transform .2s;
+}
+.tool-btn:hover { transform: translateY(-3px); }
+.new-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: crimson;
+    color: #fff;
+    font-size: .65rem;
+    padding: .2rem .5rem;
+    border-radius: 12px;
+}
+
+/* ---------- Three Column ---------- */
+.three-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+    padding: 2rem 1.2rem;
+}
+.column {
+    background: var(--card-bg);
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+.column h3 { margin-bottom: .8rem; color: var(--primary); }
+.column ul { list-style: none; }
+.column li { margin: .5rem 0; }
+.column a { color: var(--text); text-decoration: none; }
+.column a:hover { text-decoration: underline; }
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    background: var(--primary);
+    color: #fff;
+    font-size: .9rem;
+}
+
+/* ---------- Job Modal ---------- */
+.job-modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,.55);
+}
+.job-modal-content {
+    background: var(--card-bg);
+    margin: 5% auto;
+    width: 90%;
+    max-width: 650px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+.job-header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.2rem;
+}
+.job-header h1 { font-size: 1.5rem; }
+.job-header p { opacity: .9; font-size: .9rem; }
+.job-details { padding: 1.2rem; }
+.job-section { margin-bottom: 1.2rem; }
+.job-actions {
+    display: flex;
+    gap: .8rem;
+}
+.btn-primary, .btn-secondary {
+    flex: 1;
+    text-align: center;
+    padding: .6rem 0;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-secondary { background: #e0e0e0; color: var(--text); }
+.job-close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .nav-container { justify-content: center; }
+    .search-box { width: 100%; margin-top: .6rem; }
+    #global-search { flex: 1; }
+    .social-buttons { display: flex; flex-direction: column; align-items: center; }
+}
